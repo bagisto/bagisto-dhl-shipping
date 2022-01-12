@@ -1,0 +1,32 @@
+{
+    "name": "bagisto/bagisto-dhl-shipping",
+    "description": "Provides DHL Shipping methods for shipping the product.",
+    "keywords": [
+        "bagisto",
+        "dhl",
+        "dhl shipping"
+    ],
+    "homepage": "https://github.com/bagisto/bagisto-dhl-shipping",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bagisto"
+        }
+    ],
+    "require": {
+        "konekt/concord": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Webkul\\DHLShipping\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Webkul\\DHLShipping\\Providers\\DHLShippingServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}

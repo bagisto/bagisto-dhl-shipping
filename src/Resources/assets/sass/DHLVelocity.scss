@@ -1,0 +1,17 @@
+@import "../../../../../Velocity/src/Resources/assets/sass/variables";
+@import "../../../../../Velocity/src/Resources/assets/sass/components/shared.scss";
+@import "../../../../../Velocity/src/Resources/assets/sass/rango.scss";
+@import "../../../../../Marketplace/src/Resources/assets/sass/mpVelocity.scss";
+
+i {
+    &.icon {
+        @extend .rango-default;
+
+        font-size: 18px;
+        padding-right: 5px;
+
+        &.dhlshipping::before {
+            content: "\e93b";
+        }
+    }
+}
