@@ -15,7 +15,7 @@ It packs in lots of demanding features that allows your business to scale in no 
 
 - **Bagisto**: v1.3.1
 
-## Installation with composer:
+## Installation :
 - Run the following command
 ```
 composer require bagisto/bagisto-dhl-shipping
@@ -28,35 +28,6 @@ composer dump-autoload
 
 ```
 php artisan route:cache
-php artisan config:cache
-```
-
-## Installation without composer:
-
-- Unzip the respective extension zip and then merge "packages" folders into project root directory.
-- Goto config/app.php file and add following line under 'providers'
-
-```
-Webkul\DHLShipping\Providers\DHLShippingServiceProvider::class
-```
-
-- Goto composer.json file and add following line under 'psr-4'
-
-```
- "Webkul\\DHLShipping\\": "packages/Webkul/DHLShipping/src"
-```
-
-- Run these commands below to complete the setup
-
-```
-composer dump-autoload
-```
-
-```
-php artisan route:cache
-```
-
-```
 php artisan config:cache
 ```
 
